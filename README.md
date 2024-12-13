@@ -1,0 +1,3 @@
+# VHDL Counter Overflow Bug
+
+This repository demonstrates a common error in VHDL: counter overflow. The `counter.vhdl` file contains a simple counter that increments on each clock cycle.  However, it lacks proper overflow handling. When the counter reaches its maximum value (7), it wraps around to 0 unexpectedly, leading to incorrect behavior. The solution, provided in `counter_fixed.vhdl`, addresses this by adding a check to prevent the counter from exceeding the maximum value.
